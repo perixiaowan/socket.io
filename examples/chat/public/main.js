@@ -7,7 +7,11 @@ $(function() {
     '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
   ];
 
- 
+   var COLORS_TEXT = [
+    'rgba(226, 20, 0, 0.18)', 'rgba(145, 88, 15, 0.18)', 'rgba(248, 167, 0, 0.18)', 'rgba(247, 139, 0, 0.22)',
+    'rgba(88, 220, 0, 0.18)', 'rgba(40, 123, 0, 0.18)', 'rgba(168, 240, 122, 0.18)', 'rgba(74, 232, 196, 0.18)',
+    'rgba(59, 136, 235, 0.18)', 'rgba(56, 36, 170, 0.18)', 'rgba(167, 0, 255, 0.18)', 'rgba(211, 0, 231, 0.18)'
+  ];
 
   // Initialize variables
   var $window = $(window);
@@ -91,8 +95,7 @@ $(function() {
       .css('color', getUsernameColor(data.username));
     var $messageBodyDiv = $('<span class="messageBody">')
       .text(data.message)
-      .css('background-color',getUsernameColor(data.username))
-      .css('filter','alpha(opacity=20);');
+      .css('background-color',getUserTextColor(data.username));
 
     var typingClass = data.typing ? 'typing' : '';
     var $messageDiv = $('<li class="message"/>')
@@ -200,8 +203,8 @@ $(function() {
        hash = username.charCodeAt(i) + (hash << 5) - hash;
     }
     // Calculate color
-    var index = Math.abs(hash % COLORS.length);
-    return COLORS[index];
+    var index = Math.abs(hash % COLORS_TEXT.length);
+    return COLORS_TEXT[index];
   }
 
 
