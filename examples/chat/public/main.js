@@ -3,7 +3,7 @@ $(function() {
   var dpr, rem, scale;
   var docEl = document.documentElement;
   var fontEl = document.createElement('style');
-  var metaEl = document.querySelector('meta[name="viewport"]');
+  var metaEl = document.querySelector('meta[name=viewport]');
 
   dpr = window.devicePixelRatio || 1;
   rem = docEl.clientWidth * dpr / 10;
