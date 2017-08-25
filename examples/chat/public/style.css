@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
+
+
+
+
 html {
+  font-size: 30px;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
+
+
+/*/*iphone 6 
+@media (min-device-width : 375px) {
+   html{font-size: 64px;}
+}
+iphone6 plus 
+@media (min-device-width : 414px) {
+    html{font-size: 75px;}
+}*/
 
 html, input {
   font-family:
@@ -143,9 +158,11 @@ ul {
 /* Input */
 
 .inputMessage {
+  background: url("../images/user_icon.png")no-repeat 315px ;
+  
   border: 10px solid #000;
   bottom: 0;
-  height: 100px;
+  height: 60px;
   left: 0;
   outline: none;
   padding-left: 10px;
@@ -153,3 +170,16 @@ ul {
   right: 0;
   width: 70%;
 }
+
+
+.inputAttr1{
+    background: url("../images/user_icon.png")no-repeat 315px ;
+    width: 350px;
+    height: 40px;
+    border-radius:5px;
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
