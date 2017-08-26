@@ -19,7 +19,7 @@ $(function() {
 
   // 动态写入样式
   docEl.firstElementChild.appendChild(fontEl);
-  fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+  //fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
 
   // 给js调用的，某一dpr下rem和px之间的转换函数
   window.rem2px = function(v) {
