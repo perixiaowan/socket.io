@@ -287,7 +287,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Xinhua News Agency Group Chat ^(00)^ ";
+    var message = "祝全媒体编辑系统室七夕快乐～长长久久～大家尽情潜水畅聊吧～哈哈哈～ ^(00)^ ";
     log(message, {
       prepend: true
     });
